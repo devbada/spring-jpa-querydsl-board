@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="492727b3-f9da-4a9d-a4f5-deb6cb0923b9" name="Changes" comment="initialized">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/member/entity/Member.java" afterDir="false" />
+    <list default="true" id="492727b3-f9da-4a9d-a4f5-deb6cb0923b9" name="Changes" comment="객체 관계 매핑 추가 Member">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/controller/FreeBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/controller/FreeBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/entity/Free.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/entity/Free.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/form/FreeBoardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/form/FreeBoardForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/com/minam/space/board/free/entity/QFree.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/java/com/minam/space/board/free/entity/QFree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +114,7 @@
       <command value="mvn clean compile" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FreeBoardTest.t05_delete">
+  <component name="RunManager" selected="Spring Boot.SpringJpaQuerydslBoardApplication">
     <configuration name="FreeBoardTest.t01_pages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-jpa-querydsl-board" />
       <extension name="coverage">
@@ -213,8 +204,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FreeBoardTest.t05_delete" />
         <item itemvalue="JUnit.FreeBoardTest.t04_modify" />
+        <item itemvalue="JUnit.FreeBoardTest.t05_delete" />
         <item itemvalue="JUnit.FreeBoardTest.t02_get" />
         <item itemvalue="JUnit.FreeBoardTest.t03_add" />
         <item itemvalue="JUnit.FreeBoardTest.t01_pages" />
@@ -234,7 +225,7 @@
       <workItem from="1628763708433" duration="589000" />
       <workItem from="1628764419105" duration="4171000" />
       <workItem from="1628816098081" duration="5462000" />
-      <workItem from="1628828764198" duration="3515000" />
+      <workItem from="1628828764198" duration="5412000" />
     </task>
     <task id="LOCAL-00001" summary="initialized">
       <created>1628757897462</created>
@@ -250,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628824230784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="객체 관계 매핑 추가 Member">
+      <created>1628833725740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628833725741</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +268,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialized" />
+    <MESSAGE value="객체 관계 매핑 추가 Member" />
+    <option name="LAST_COMMIT_MESSAGE" value="객체 관계 매핑 추가 Member" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

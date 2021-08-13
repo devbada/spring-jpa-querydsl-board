@@ -21,7 +21,7 @@ public interface FreeBoardMapper {
     FreeBoardForm.Response.FindAll       toFindAll(Free entity);
     List<FreeBoardForm.Response.FindAll> toFindAll(List<Free> entity);
 
-    FreeBoardForm.Response.FindOne      toFindOne(Free entity);
+    FreeBoardForm.Response.FindOne       toFindOne(Free entity);
 
     Free toEntity(FreeBoardForm.Request.Find find);
     Free toEntity(FreeBoardForm.Request.Add add);

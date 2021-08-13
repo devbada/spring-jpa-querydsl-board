@@ -164,3 +164,9 @@ spring-jpa-querydsl-board.iml
 /target/generated-sources/java/com/minam/space/member/entity/QMember.java
 /target/generated-snippets/free-board-test/t05_delete/request-body.adoc
 /target/generated-snippets/free-board-test/t05_delete/response-body.adoc
+/target/generated-snippets/free-board-test/t04_modify/curl-request.adoc
+/target/generated-snippets/free-board-test/t04_modify/http-request.adoc
+/target/generated-snippets/free-board-test/t04_modify/http-response.adoc
+/target/generated-snippets/free-board-test/t04_modify/httpie-request.adoc
+/target/generated-snippets/free-board-test/t04_modify/request-body.adoc
+/target/generated-snippets/free-board-test/t04_modify/response-body.adoc
