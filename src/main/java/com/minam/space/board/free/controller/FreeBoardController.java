@@ -37,7 +37,7 @@ public class FreeBoardController {
     }
 
     @PostMapping("/space/boards/frees")
-    public Free add(FreeBoardForm.Request.Add add) {
+    public Free add(@RequestBody FreeBoardForm.Request.Add add) {
         return freeBoardService.add(mapper.toEntity(add));
     }
 

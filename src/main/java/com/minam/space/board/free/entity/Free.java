@@ -1,11 +1,10 @@
 package com.minam.space.board.free.entity;
 
+import com.minam.space.member.entity.Member;
 import lombok.*;
 import org.springframework.context.annotation.Description;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
@@ -19,6 +18,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder=true)
+@Table(name="BOARD_FREE")
 @Description("게시판 - 자유")
 public class Free {
 
@@ -27,7 +27,10 @@ public class Free {
 
     private String title;
     private String content;
-    private String writer;
+
+    @ManyToOne
+    private Member writer;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

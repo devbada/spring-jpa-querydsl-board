@@ -156,3 +156,11 @@ hs_err_pid*
 .idea/modules.xml
 .idea/runConfigurations.xml
 spring-jpa-querydsl-board.iml
+/target/generated-snippets/free-board-test/t05_delete/curl-request.adoc
+/target/generated-sources/annotations/com/minam/space/board/free/mapper/FreeBoardMapperImpl.java
+/target/generated-snippets/free-board-test/t05_delete/http-request.adoc
+/target/generated-snippets/free-board-test/t05_delete/http-response.adoc
+/target/generated-snippets/free-board-test/t05_delete/httpie-request.adoc
+/target/generated-sources/java/com/minam/space/member/entity/QMember.java
+/target/generated-snippets/free-board-test/t05_delete/request-body.adoc
+/target/generated-snippets/free-board-test/t05_delete/response-body.adoc

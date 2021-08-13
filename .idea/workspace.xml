@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="492727b3-f9da-4a9d-a4f5-deb6cb0923b9" name="Changes" comment="initialized">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minam/common/engine/helper/model/CamelCaseJsonHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minam/common/engine/helper/model/ObjectHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minam/common/engine/helper/model/SnakeCaseJsonHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/minam/common/engine/test/SuperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/minam/common/engine/test/TestHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/member/entity/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jpa-querydsl-board.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/controller/FreeBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/controller/FreeBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/entity/Free.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/entity/Free.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/form/FreeBoardForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/form/FreeBoardForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/repository/FreeBoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/repository/FreeBoardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/minam/space/board/free/mapper/FreeBoardMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/com/minam/space/board/free/entity/QFree.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/java/com/minam/space/board/free/entity/QFree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -163,6 +156,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FreeBoardTest.t03_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t03_add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FreeBoardTest.t04_modify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-jpa-querydsl-board" />
       <extension name="coverage">
@@ -195,21 +204,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJpaQuerydslBoardApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jpa-querydsl-board" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.minam.springjpaquerydslboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.minam.springjpaquerydslboard" />
-      <option name="MAIN_CLASS_NAME" value="com.minam.springjpaquerydslboard.SpringJpaQuerydslBoardApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringJpaQuerydslBoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-jpa-querydsl-board" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.minam.SpringJpaQuerydslBoardApplication" />
@@ -222,8 +216,8 @@
         <item itemvalue="JUnit.FreeBoardTest.t05_delete" />
         <item itemvalue="JUnit.FreeBoardTest.t04_modify" />
         <item itemvalue="JUnit.FreeBoardTest.t02_get" />
+        <item itemvalue="JUnit.FreeBoardTest.t03_add" />
         <item itemvalue="JUnit.FreeBoardTest.t01_pages" />
-        <item itemvalue="JUnit.SpringJpaQuerydslBoardApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +233,8 @@
       <workItem from="1628746835307" duration="11788000" />
       <workItem from="1628763708433" duration="589000" />
       <workItem from="1628764419105" duration="4171000" />
-      <workItem from="1628816098081" duration="3612000" />
+      <workItem from="1628816098081" duration="5462000" />
+      <workItem from="1628828764198" duration="3515000" />
     </task>
     <task id="LOCAL-00001" summary="initialized">
       <created>1628757897462</created>
@@ -248,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628757897462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initialized">
+      <created>1628824230784</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628824230784</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,18 +277,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java</url>
-          <line>55</line>
+          <line>56</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="3" />
+          <line>34</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
+        <watch expression="freeBoardRepository.getById(id)" language="JAVA" />
         <watch expression="freeBoardRepository.getById(id)" language="JAVA" />
       </configuration>
     </watches-manager>

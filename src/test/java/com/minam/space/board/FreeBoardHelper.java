@@ -5,6 +5,7 @@ import com.minam.space.board.free.entity.Free;
 import com.minam.space.board.free.form.FreeBoardForm;
 import com.minam.space.board.free.form.FreeBoardForm.Request;
 import com.minam.space.board.free.form.FreeBoardForm.Response;
+import com.minam.space.member.entity.Member;
 import lombok.SneakyThrows;
 
 import java.time.LocalDateTime;
@@ -46,7 +47,7 @@ public class FreeBoardHelper extends TestHelper {
         return add(FreeBoardForm.Request.Add.builder()
                                                 .title("testIam")
                                                 .content("test Content")
-                                                .writer("minam.cho")
+                                                .writer(new Member())
                                                 .createdAt(LocalDateTime.now())
                                                 .build()).getId();
     }

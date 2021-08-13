@@ -43,7 +43,7 @@ public class FreeBoardService {
     public Free modify(Free entity) {
         Optional<Free> freeOne = freeBoardRepository.findById(entity.getId());
 
-//        if (freeOne.isEmpty()) throw new Exception("업데이트 대상이 존재하지 않습니다.");
+        if (freeOne.isEmpty()) throw new Exception("업데이트 대상이 존재하지 않습니다.");
 
         freeOne.ifPresent(free -> {
             freeBoardRepository.save(entity);

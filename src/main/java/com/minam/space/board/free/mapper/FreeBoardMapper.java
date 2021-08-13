@@ -18,7 +18,6 @@ import java.util.List;
 public interface FreeBoardMapper {
     FreeBoardMapper mapper = Mappers.getMapper(FreeBoardMapper.class);
 
-    @Mapping(target="id", source="id")
     FreeBoardForm.Response.FindAll       toFindAll(Free entity);
     List<FreeBoardForm.Response.FindAll> toFindAll(List<Free> entity);
 

@@ -1,5 +1,6 @@
 package com.minam.space.board.free.form;
 
+import com.minam.space.member.entity.Member;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -38,7 +39,7 @@ public class FreeBoardForm {
         public static class Add {
             private String title;
             private String content;
-            private String writer;
+            private Member writer;
 
             @DateTimeFormat(iso=DateTimeFormat.ISO.DATE_TIME)
             private LocalDateTime createdAt;
@@ -76,7 +77,7 @@ public class FreeBoardForm {
         public static class FindAll {
             private Long        id;
             private String      title;
-            private String      writer;
+            private Member      writer;
 
         }
 
@@ -84,7 +85,7 @@ public class FreeBoardForm {
         public static class FindOne {
             private Long            id;
             private String          title;
-            private String          writer;
+            private Member          writer;
             private LocalDateTime   createdAt;
             private LocalDateTime   updatedAt;
         }

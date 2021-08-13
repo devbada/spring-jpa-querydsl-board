@@ -7,6 +7,7 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.Generated;
 import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -16,6 +17,8 @@ import com.querydsl.core.types.Path;
 public class QFree extends EntityPathBase<Free> {
 
     private static final long serialVersionUID = 521723554L;
+
+    private static final PathInits INITS = PathInits.DIRECT2;
 
     public static final QFree free = new QFree("free");
 
@@ -29,18 +32,27 @@ public class QFree extends EntityPathBase<Free> {
 
     public final DateTimePath<java.time.LocalDateTime> updatedAt = createDateTime("updatedAt", java.time.LocalDateTime.class);
 
-    public final StringPath writer = createString("writer");
+    public final com.minam.space.member.entity.QMember writer;
 
     public QFree(String variable) {
-        super(Free.class, forVariable(variable));
+        this(Free.class, forVariable(variable), INITS);
     }
 
     public QFree(Path<? extends Free> path) {
-        super(path.getType(), path.getMetadata());
+        this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
     }
 
     public QFree(PathMetadata metadata) {
-        super(Free.class, metadata);
+        this(metadata, PathInits.getFor(metadata, INITS));
+    }
+
+    public QFree(PathMetadata metadata, PathInits inits) {
+        this(Free.class, metadata, inits);
+    }
+
+    public QFree(Class<? extends Free> type, PathMetadata metadata, PathInits inits) {
+        super(type, metadata, inits);
+        this.writer = inits.isInitialized("writer") ? new com.minam.space.member.entity.QMember(forProperty("writer")) : null;
     }
 
 }
