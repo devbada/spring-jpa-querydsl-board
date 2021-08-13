@@ -5,6 +5,7 @@ import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @since       2021.08.12
@@ -51,28 +52,41 @@ public class FreeBoardForm {
         @NoArgsConstructor
         @AllArgsConstructor
         public static class Modify {
-            private String title;
-            private String content;
+            private Long    id;
+            private String  title;
+            private String  content;
 
             @DateTimeFormat(iso=DateTimeFormat.ISO.DATE_TIME)
             private LocalDateTime updatedAt;
+        }
+
+        @Getter
+        @Setter
+        @Builder
+        @ToString
+        @NoArgsConstructor
+        @AllArgsConstructor
+        public static class DeleteAll {
+            private List<Long> ids;
         }
     }
     public static class Response {
 
         @Data
         public static class FindAll {
-            private String title;
-            private String writer;
+            private Long        id;
+            private String      title;
+            private String      writer;
 
         }
 
         @Data
         public static class FindOne {
-            private String title;
-            private String writer;
-            private LocalDateTime createdAt;
-            private LocalDateTime updatedAt;
+            private Long            id;
+            private String          title;
+            private String          writer;
+            private LocalDateTime   createdAt;
+            private LocalDateTime   updatedAt;
         }
     }
 }

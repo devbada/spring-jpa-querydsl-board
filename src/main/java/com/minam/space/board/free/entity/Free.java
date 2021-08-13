@@ -14,12 +14,14 @@ import java.time.LocalDateTime;
  * @description free
  **********************************************************************************************************************/
 @Entity
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder=true)
-@Description("묶음앨범-앨범")
+@Description("게시판 - 자유")
 public class Free {
+
     @Id @GeneratedValue
     private Long id;
 

@@ -41,14 +41,20 @@ public class FreeBoardController {
         return freeBoardService.add(mapper.toEntity(add));
     }
 
-    @PutMapping("/space/boards/frees")
-    public Free modify(FreeBoardForm.Request.Modify modify) {
+    @PutMapping("/space/boards/frees/{freeId}")
+    public Free modify(@PathVariable("freeId") Long freeId, @RequestBody FreeBoardForm.Request.Modify modify) {
         return freeBoardService.modify(mapper.toEntity(modify));
     }
 
     @DeleteMapping("/space/boards/frees/{id}")
     public void delete(@PathVariable("id") Long id) {
         freeBoardService.delete(id);
+    }
+
+    @DeleteMapping("/space/boards/frees/all")
+    public void deleteAll(FreeBoardForm.Request.DeleteAll delete) {
+        freeBoardService.deleteAll(delete);
+
     }
 
 }
