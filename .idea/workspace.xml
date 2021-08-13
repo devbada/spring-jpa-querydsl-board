@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="492727b3-f9da-4a9d-a4f5-deb6cb0923b9" name="Changes" comment="" />
+    <list default="true" id="492727b3-f9da-4a9d-a4f5-deb6cb0923b9" name="Changes" comment="객체 관계 매핑 추가 Member">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/mapper/FreeBoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,7 +34,42 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="20210812-CRUD_DEFAULTS" />
+                    <option name="lastUsedInstant" value="1628758061" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1628758060" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1wbfgXAAMCjrqPl5erJBi2Pn1fz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,26 +86,115 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/minam/common/engine/helper/model" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.091575086" />
     <property name="project.structure.side.proportion" value="0.34130636" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/minam/common/engine/helper/model" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/minam" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.minam" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.minam.common.engine.helper.model" />
+      <recent name="com.minam.space.board" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean package" />
       <command value="mvn clean install" />
       <command value="mvn clean compile" />
-      <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringJpaQuerydslBoardApplication">
+    <configuration name="FreeBoardTest.t01_pages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t01_pages" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FreeBoardTest.t02_get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t02_get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FreeBoardTest.t03_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t03_add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FreeBoardTest.t04_modify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t04_modify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FreeBoardTest.t05_delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jpa-querydsl-board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.minam.space.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.minam.space.board" />
+      <option name="MAIN_CLASS_NAME" value="com.minam.space.board.FreeBoardTest" />
+      <option name="METHOD_NAME" value="t05_delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringJpaQuerydslBoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-jpa-querydsl-board" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.minam.SpringJpaQuerydslBoardApplication" />
@@ -74,6 +202,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FreeBoardTest.t04_modify" />
+        <item itemvalue="JUnit.FreeBoardTest.t05_delete" />
+        <item itemvalue="JUnit.FreeBoardTest.t02_get" />
+        <item itemvalue="JUnit.FreeBoardTest.t03_add" />
+        <item itemvalue="JUnit.FreeBoardTest.t01_pages" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,8 +221,34 @@
       <option name="presentableId" value="Default" />
       <updated>1628732320778</updated>
       <workItem from="1628732322121" duration="11193000" />
-      <workItem from="1628746835307" duration="8981000" />
+      <workItem from="1628746835307" duration="11788000" />
+      <workItem from="1628763708433" duration="589000" />
+      <workItem from="1628764419105" duration="4171000" />
+      <workItem from="1628816098081" duration="5462000" />
+      <workItem from="1628828764198" duration="5412000" />
     </task>
+    <task id="LOCAL-00001" summary="initialized">
+      <created>1628757897462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628757897462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initialized">
+      <created>1628824230784</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628824230784</updated>
+    </task>
+    <task id="LOCAL-00003" summary="객체 관계 매핑 추가 Member">
+      <created>1628833725740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628833725741</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +264,33 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialized" />
+    <MESSAGE value="객체 관계 매핑 추가 Member" />
+    <option name="LAST_COMMIT_MESSAGE" value="객체 관계 매핑 추가 Member" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/minam/space/board/FreeBoardHelper.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/minam/space/board/free/service/FreeBoardService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="freeBoardRepository.getById(id)" language="JAVA" />
+        <watch expression="freeBoardRepository.getById(id)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

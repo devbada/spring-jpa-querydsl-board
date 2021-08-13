@@ -25,12 +25,12 @@ import static com.minam.space.board.free.mapper.FreeBoardMapper.mapper;
 public class FreeBoardService {
     private final FreeBoardRepository freeBoardRepository;
 
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public List<FreeBoardForm.Response.FindAll> pages() {
         return mapper.toFindAll((List<Free>) freeBoardRepository.findAll());
     }
 
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     public Response.FindOne get(Long id) {
         return mapper.toFindOne(freeBoardRepository.getById(id));
     }
@@ -43,7 +43,9 @@ public class FreeBoardService {
     public Free modify(Free entity) {
         Optional<Free> freeOne = freeBoardRepository.findById(entity.getId());
 
-        if (freeOne.isEmpty()) throw new Exception("업데이트 대상이 존재하지 않습니다.");
+        if (freeOne.isEmpty()) {
+            throw new Exception("업데이트 대상이 존재하지 않습니다.");
+        }
 
         freeOne.ifPresent(free -> {
             freeBoardRepository.save(entity);
@@ -58,5 +60,9 @@ public class FreeBoardService {
 
     public void deleteIn(List<Long> ids) {
         freeBoardRepository.deleteAllById(ids);
+    }
+
+    public void deleteAll(FreeBoardForm.Request.DeleteAll delete) {
+        freeBoardRepository.deleteAllByIdInQuery(delete.getIds());
     }
 }

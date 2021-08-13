@@ -3,6 +3,7 @@ package com.minam.space.board.free.mapper;
 import com.minam.space.board.free.entity.Free;
 import com.minam.space.board.free.form.FreeBoardForm;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
@@ -20,10 +21,9 @@ public interface FreeBoardMapper {
     FreeBoardForm.Response.FindAll       toFindAll(Free entity);
     List<FreeBoardForm.Response.FindAll> toFindAll(List<Free> entity);
 
-    FreeBoardForm.Response.FindOne      toFindOne(Free entity);
+    FreeBoardForm.Response.FindOne       toFindOne(Free entity);
+
     Free toEntity(FreeBoardForm.Request.Find find);
-
     Free toEntity(FreeBoardForm.Request.Add add);
-
     Free toEntity(FreeBoardForm.Request.Modify modify);
 }

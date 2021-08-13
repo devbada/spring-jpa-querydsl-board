@@ -1,11 +1,10 @@
 package com.minam.space.board.free.entity;
 
+import com.minam.space.member.entity.Member;
 import lombok.*;
 import org.springframework.context.annotation.Description;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
@@ -14,18 +13,24 @@ import java.time.LocalDateTime;
  * @description free
  **********************************************************************************************************************/
 @Entity
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder=true)
-@Description("묶음앨범-앨범")
+@Table(name="BOARD_FREE")
+@Description("게시판 - 자유")
 public class Free {
+
     @Id @GeneratedValue
     private Long id;
 
     private String title;
     private String content;
-    private String writer;
+
+    @ManyToOne
+    private Member writer;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
